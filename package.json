@@ -1,0 +1,27 @@
+{
+  "name": "anywhere",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint .",
+    "fix": "eslint --fix ."
+  },
+  "pre-commit": ["fix", "lint"],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/youdeliang/anywhere.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/youdeliang/anywhere/issues"
+  },
+  "homepage": "https://github.com/youdeliang/anywhere#readme",
+  "devDependencies": {
+    "eslint": "^7.13.0",
+    "pre-commit": "^1.2.2"
+  }
+}
