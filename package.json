@@ -6,9 +6,13 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint .",
-    "fix": "eslint --fix ."
+    "fix": "eslint --fix .",
+    "start": "supervisor src/app.js"
   },
-  "pre-commit": ["fix", "lint"],
+  "pre-commit": [
+    "fix",
+    "lint"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/youdeliang/anywhere.git"
@@ -23,5 +27,11 @@
   "devDependencies": {
     "eslint": "^7.13.0",
     "pre-commit": "^1.2.2"
+  },
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "global": "^4.4.0",
+    "handlebars": "^4.7.6",
+    "supervisor": "^0.12.0"
   }
 }
